@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',Sans-Serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image:url(123.png);
+}
+.list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  right:80px;
+  overflow: hidden;
+  text-transform: capitalize;
+  
+}
+.link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #8c52ff;
+  font-weight: 700;
+ font-family: 'poppins', Sans-Serif;
+ transition:color 0.3s,transform 0.3s;
+}
+.link:hover{
+  color:#ffff;
+  transform: scale(1.1);
+}
+
+section{
+  position: relative;
+  max-width: 400px;
+  background-color: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(55px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+h1{
+  font-size: 2rem;
+  color: #8c52ff;
+  text-align: center;
+}
+.inputbox{
+  position: relative;
+  margin: 30px 0;
+  max-width: 310px;
+  border-bottom: 2px solid #fff;
+}
+.inputbox label{
+  position: absolute;
+  top:50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.5 ease-in-out;
+}
+input:focus ~label,
+input: vaild ~label{
+  top: -5px;
+}
+inputbox input{
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border: none;
+  opacity: 0;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 35px 0 5px;
+  color:#fff;
+}
+.inputbox ion-icon{
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1.2rem;
+  top: 20px;
+}
+.forget{
+  margin: 35px 0;
+  font-size: 0.85rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.forget label{
+  display: flex;
+  align-items: center;
+}
+.forget label input{
+  margin-right: 3px;
+}
+.forget a{
+  color:#fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.forget a:hover {
+  text-decoration: underline;
+}
+button{
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: rgb(255,255,255,1);
+  border:none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.4 ease;
+  transition: background-color 0.3s,transform0.3s;
+}
+button:hover {
+  background-color: rgb(255,255,255,0.5);
+  background-color: #8c52ff;
+  transform: scale(1.05);
+  color: #ffff;
+}
+.register{
+  font-size: 0.9rem;
+  color:#fff;
+  text-align: center;
+  margin-block: 25px 0 10px;
+}
+.register p a {
+  text-decoration: none;
+  color:#fff;
+  font-weight: 600;
+}
+.register p a:hover {
+  text-decoration: underline;
+}
+.logo{
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 170px;
+  height: auto;
+  
+}
